@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>PySide</string>
+   <string>Python - PySide6 - Qt</string>
   </property>
   <property name="windowIcon">
    <iconset resource="../resources.qrc">

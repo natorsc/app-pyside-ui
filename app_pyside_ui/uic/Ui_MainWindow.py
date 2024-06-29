@@ -3,7 +3,7 @@
 ################################################################################
 ## Form generated from reading UI file 'MainWindow.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.7.0
+## Created by: Qt User Interface Compiler version 6.7.2
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -27,7 +27,7 @@ class Ui_MainWindow(object):
             MainWindow.setObjectName(u"MainWindow")
         MainWindow.resize(683, 384)
         icon = QIcon()
-        icon.addFile(u":/icons/br.com.justcode.Qt", QSize(), QIcon.Normal, QIcon.Off)
+        icon.addFile(u":/icons/br.com.justcode.Qt", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         MainWindow.setWindowIcon(icon)
         MainWindow.setLocale(QLocale(QLocale.Portuguese, QLocale.Brazil))
         self.action_exit = QAction(MainWindow)
@@ -37,7 +37,7 @@ class Ui_MainWindow(object):
         if QIcon.hasThemeIcon(iconThemeName):
             icon1 = QIcon.fromTheme(iconThemeName)
         else:
-            icon1.addFile(u":/icons/application-exit", QSize(), QIcon.Normal, QIcon.Off)
+            icon1.addFile(u":/icons/application-exit", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
 
         self.action_exit.setIcon(icon1)
         self.centralwidget = QWidget(MainWindow)
@@ -80,7 +80,7 @@ class Ui_MainWindow(object):
     # setupUi
 
     def retranslateUi(self, MainWindow):
-        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"PySide", None))
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"Python - PySide6 - Qt", None))
         self.action_exit.setText(QCoreApplication.translate("MainWindow", u"Sair", None))
 #if QT_CONFIG(shortcut)
         self.action_exit.setShortcut(QCoreApplication.translate("MainWindow", u"Ctrl+Q", None))

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-'''.'''
+"""."""
 
 import sys
 import unittest
@@ -10,37 +10,24 @@ from app_pyside_ui.components.MainWindow import MainWindow
 
 
 class TestMainWindow(unittest.TestCase):
-
     def setUp(self):
+        application = QtWidgets.QApplication.instance()
         if not QtWidgets.QApplication.instance():
             application = QtWidgets.QApplication(sys.argv)
-        else:
-            application = QtWidgets.QApplication.instance()
-        self.mainwindow = MainWindow()
+
+        self.mainwindow = MainWindow(application=application)
 
     def test_button_exit_object_name(self):
-        self.assertEqual(
-            first=self.mainwindow.ui.action_exit.objectName(),
-            second='action_exit',
-        )
+        assert self.mainwindow.ui.action_exit.objectName() == 'action_exit'
 
     def test_label_object_name(self):
-        self.assertEqual(
-            first=self.mainwindow.ui.label.objectName(),
-            second='label',
-        )
+        assert self.mainwindow.ui.label.objectName() == 'label'
 
     def test_line_edit_object_name(self):
-        self.assertEqual(
-            first=self.mainwindow.ui.line_edit.objectName(),
-            second='line_edit',
-        )
+        assert self.mainwindow.ui.line_edit.objectName() == 'line_edit'
 
     def test_push_button_object_name(self):
-        self.assertEqual(
-            first=self.mainwindow.ui.push_button.objectName(),
-            second='push_button',
-        )
+        assert self.mainwindow.ui.push_button.objectName() == 'push_button'
 
 
 if __name__ == '__main__':

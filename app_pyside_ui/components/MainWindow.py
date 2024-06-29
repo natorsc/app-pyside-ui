@@ -10,7 +10,6 @@ except ModuleNotFoundError:
 
 
 class MainWindow(QtWidgets.QMainWindow):
-
     def __init__(self, parent=None, **kwargs):
         super().__init__(parent=parent)
         self.application = kwargs.get('application')
@@ -26,13 +25,11 @@ class MainWindow(QtWidgets.QMainWindow):
         if text.split():
             self.ui.label.setText(text)
         else:
-            self.ui.label.setText(
-                self.tr('Digite algo no campo de texto ;).')
-            )
+            self.ui.label.setText(self.tr('Digite algo no campo de texto ;).'))
 
     def on_action_exit_clicked(self):
         self.application.quit()
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     pass

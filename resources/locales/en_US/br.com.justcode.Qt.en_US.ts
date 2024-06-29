@@ -4,9 +4,14 @@
 <context>
     <name>MainWindow</name>
     <message>
+        <location filename="../../../app_pyside_ui/components/MainWindow.py" line="28"/>
+        <source>Digite algo no campo de texto ;).</source>
+        <translation>Type something in the text field ;).</translation>
+    </message>
+    <message>
         <location filename="../../ui/MainWindow.ui" line="14"/>
-        <source>PySide</source>
-        <translation>PySide</translation>
+        <source>Python - PySide6 - Qt</source>
+        <translation>Python - PySide6 - Qt</translation>
     </message>
     <message>
         <location filename="../../ui/MainWindow.ui" line="28"/>
@@ -37,11 +42,6 @@
         <location filename="../../ui/MainWindow.ui" line="78"/>
         <source>Ctrl+Q</source>
         <translation>Ctrl+Q</translation>
-    </message>
-    <message>
-        <location filename="../../../app_pyside_ui/components/MainWindow.py" line="31"/>
-        <source>Digite algo no campo de texto ;).</source>
-        <translation>Type something in the text field ;).</translation>
     </message>
 </context>
 </TS>

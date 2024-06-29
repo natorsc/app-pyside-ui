@@ -3,9 +3,9 @@
 
 import locale
 import sys
+from ctypes import windll
 
 from PySide6 import QtCore, QtGui, QtWidgets
-
 
 try:
     from components.MainWindow import MainWindow
@@ -31,8 +31,6 @@ def main() -> None:
         application.installTranslator(translator)
 
     if QtCore.QSysInfo.productType() == 'windows':
-        from ctypes import windll
-
         windll.shell32.SetCurrentProcessExplicitAppUserModelID(
             APPLICATION_NAME,
         )
@@ -43,5 +41,5 @@ def main() -> None:
     sys.exit(application.exec())
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
